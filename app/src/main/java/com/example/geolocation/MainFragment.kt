@@ -17,7 +17,13 @@ class MainFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        mBinding = FragmentMainBinding.inflate(inflater,container, false)
+        mBinding = FragmentMainBinding.inflate(inflater, container, false)
         return mBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
     }
 }
