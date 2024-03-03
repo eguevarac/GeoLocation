@@ -42,9 +42,19 @@ dependencies {
 
     val nav_version = "2.7.7"
 
+    //para google maps
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+
+    //para poder usar supportFragmentmanager
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
     //navComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    //Para poder acceder a la localización
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("com.google.android.gms:play-services-location:21.1.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
